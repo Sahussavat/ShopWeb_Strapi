@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accountings",
+  "info": {
+    "name": "accounting"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "coins": {
+      "type": "integer"
+    },
+    "points": {
+      "type": "integer"
+    }
+  }
+}

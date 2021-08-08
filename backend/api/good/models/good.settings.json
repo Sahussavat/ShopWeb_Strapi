@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "goods",
+  "info": {
+    "name": "good"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "detail": {
+      "type": "text"
+    },
+    "goodName": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "integer"
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "cost_type": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "eventsText": {
+      "type": "text"
+    },
+    "dateEvents": {
+      "type": "string"
+    }
+  }
+}
