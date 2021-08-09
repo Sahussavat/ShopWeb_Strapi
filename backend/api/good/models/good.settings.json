@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "goods",
   "info": {
-    "name": "good"
+    "name": "good",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -20,6 +21,12 @@
     "amount": {
       "type": "integer"
     },
+    "cost_type": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "integer"
+    },
     "pic": {
       "model": "file",
       "via": "related",
@@ -31,12 +38,6 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
-    },
-    "cost_type": {
-      "type": "string"
-    },
-    "cost": {
-      "type": "integer"
     }
   }
 }
